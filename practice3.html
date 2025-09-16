@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<title>Prctice 3</title>
+</head>
+<body> 
+<h1>Input password </h1>
+<input type = "text" id = "input" value = "">
+<h1> Retype Password</h1>
+<input type = "text" id = "check" value = "">
+<button type = "button" onclick ="sendDataToJS()">Submit</button> 
+    <script>
+	function sendDataToJS(){
+        var input = document.getElementById("input").value;
+	var check = document.getElementById("check").value;
+
+	if (input.length < 8 || input !== check) {
+		alert("wrong");
+ 	}
+	else {
+		alert("CORRET");
+	}
+	}
+    </script>
+</body>
+</html>
